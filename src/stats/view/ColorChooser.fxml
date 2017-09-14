@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stats.view.ColorChooserController">
+   <children>
+      <GridPane layoutX="26.0" layoutY="21.0" prefHeight="151.0" prefWidth="265.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="97.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.0" minWidth="10.0" prefWidth="168.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="75-аас 100%" />
+            <Label layoutX="10.0" layoutY="15.0" text="50-аас 75%" GridPane.rowIndex="1" />
+            <Label layoutX="10.0" layoutY="45.0" text="25-аас 50%" GridPane.rowIndex="2" />
+            <Label layoutX="10.0" layoutY="75.0" text="0-оос 25%" GridPane.rowIndex="3" />
+            <ColorPicker fx:id="colorP4" onAction="#handleCustomColor4" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ColorPicker fx:id="colorP1" layoutX="110.0" layoutY="100.0" onAction="#handleCustomColor1" GridPane.columnIndex="1" />
+            <ColorPicker fx:id="colorP2" layoutX="110.0" layoutY="10.0" onAction="#handleCustomColor2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ColorPicker fx:id="colorP3" layoutX="110.0" layoutY="40.0" onAction="#handleCustomColor3" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button fx:id="closeButton" layoutX="110.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleSaveColor" text="Хадгалах" />
+      <Rectangle fx:id="rectangle1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="26.0" layoutY="199.0" onMouseClicked="#handleColor1" stroke="WHITE" strokeType="INSIDE" style="-fx-border-color: red;" width="41.0" />
+      <Rectangle fx:id="rectangle2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="95.0" layoutY="199.0" onMouseClicked="#handleColor2" stroke="WHITE" strokeType="INSIDE" width="41.0" />
+      <Rectangle fx:id="rectangle3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="163.0" layoutY="199.0" onMouseClicked="#handleColor3" stroke="WHITE" strokeType="INSIDE" width="41.0" />
+      <Rectangle fx:id="rectangle4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="232.0" layoutY="199.0" onMouseClicked="#handleColor4" stroke="WHITE" strokeType="INSIDE" width="41.0" />
+   </children>
+</AnchorPane>

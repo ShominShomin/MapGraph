@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stats.view.MainPanelController">
+	<center>
+		<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="970.0" BorderPane.alignment="CENTER">
+			<children>
+            <AnchorPane fx:id="anchorPane" layoutX="-80.0" prefHeight="579.0" prefWidth="1053.0">
+               <children>
+      				<ImageView fx:id="BayanOlgii" cacheHint="SCALE" fitHeight="300.0" fitWidth="400.0" layoutY="56.20000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/BayanOlgii.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="hovd" fitHeight="300.0" fitWidth="400.0" layoutX="65.0" layoutY="127.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Hovd.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="uvs" fitHeight="300.0" fitWidth="400.0" layoutX="98.0" layoutY="7.700000762939453" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Uvs.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="zavhan" fitHeight="300.0" fitWidth="400.0" layoutX="182.0" layoutY="79.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Zavhan.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="goviAltai" fitHeight="300.0" fitWidth="400.0" layoutX="163.3000030517578" layoutY="221.09999465942383" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/GoviAltai.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="bayanKnongor" fitHeight="300.0" fitWidth="400.0" layoutX="276.0" layoutY="232.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/BayanKnongor.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="arkhangai" fitHeight="300.0" fitWidth="400.0" layoutX="322.0" layoutY="104.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Arkhangai.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="orkhon" fitHeight="300.0" fitWidth="400.0" layoutX="410.0" layoutY="51.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Orkhon.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="Bulgan" fitHeight="300.0" fitWidth="400.0" layoutX="382.0" layoutY="66.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Bulgan.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="khovsgol" fitHeight="300.0" fitWidth="400.0" layoutX="289.0" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Khovsgol.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="omnoGovi" fitHeight="300.0" fitWidth="400.0" layoutX="399.0" layoutY="318.8000068664551" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/OmnoGovi.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="dundGovi" fitHeight="300.0" fitWidth="400.0" layoutX="467.20001220703125" layoutY="219.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/DundGovi.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="ovorKhangai" fitHeight="300.0" fitWidth="400.0" layoutX="373.0" layoutY="208.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/OvorKhangai.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="tov" fitHeight="300.0" fitWidth="400.0" layoutX="480.0" layoutY="108.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Tov.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="selenge" fitHeight="300.0" fitWidth="400.0" layoutX="474.0" layoutY="33.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Selenge.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="darkhanUul" fitHeight="300.0" fitWidth="400.0" layoutX="468.0" layoutY="29.700000762939453" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/DarkhanUul.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="ulaanbaatar" fitHeight="300.0" fitWidth="400.0" layoutX="503.0" layoutY="103.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Ulaanbaatar.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="khentii" fitHeight="300.0" fitWidth="400.0" layoutX="595.0" layoutY="107.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Khentii.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="goviSumber" fitHeight="300.0" fitWidth="400.0" layoutX="534.0" layoutY="174.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/GoviSumber.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="dornoGovi" fitHeight="300.0" fitWidth="400.0" layoutX="585.0" layoutY="261.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/DornoGovi.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="sukhBaatar" fitHeight="300.0" fitWidth="400.0" layoutX="699.0" layoutY="168.70000076293945" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/SukhBaatar.png" />
+      					</image>
+      				</ImageView>
+      				<ImageView fx:id="dornod" fitHeight="300.0" fitWidth="400.0" layoutX="752.5" layoutY="67.80000114440918" pickOnBounds="true" preserveRatio="true">
+      					<image>
+      						<Image url="@../../blanks/Dornod.png" />
+      					</image>
+      				</ImageView>
+                  <GridPane layoutX="820.0" layoutY="426.0" prefHeight="109.0" prefWidth="198.0" style="-fx-border-style: solid; -fx-border-color: lightgrey;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="26.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="160.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Rectangle fx:id="rectangle1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+                        <Rectangle fx:id="rectangle2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="10.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="20.0" GridPane.rowIndex="1" />
+                        <Rectangle fx:id="rectangle3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="10.0" layoutY="41.0" stroke="BLACK" strokeType="INSIDE" width="20.0" GridPane.rowIndex="2" />
+                        <Rectangle fx:id="rectangle4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="10.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="20.0" GridPane.rowIndex="3" />
+                        <Label fx:id="labelValue1" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelValue2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelValue3" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelValue4" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+				<AnchorPane layoutY="13.0" prefHeight="593.0" prefWidth="940.0" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="-3.0">
+					<children>
+                  <GridPane hgap="5.0" layoutX="694.0" layoutY="6.0" prefHeight="79.0" prefWidth="235.0" vgap="5.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="10.0" prefWidth="115.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="115.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button alignment="CENTER" minWidth="115.0" mnemonicParsing="false" onAction="#handleLoad" prefHeight="31.0" prefWidth="115.0" text="Файл Унших" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="pathText" prefHeight="31.0" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="-120.0" />
+                           </GridPane.margin></TextField>
+                        <Button alignment="CENTER" layoutX="10.0" layoutY="55.0" minWidth="115.0" mnemonicParsing="false" onAction="#handleNewFile" prefHeight="31.0" prefWidth="115.0" text="Шинэ Файл">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <Slider fx:id="slider" blockIncrement="1.0" layoutY="-9.0" majorTickUnit="1.0" max="12.0" min="1.0" minorTickCount="0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="76.0" prefWidth="469.0" showTickLabels="true" snapToTicks="true" value="1.0" />
+					</children>
+				</AnchorPane>
+			</children>
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+		</AnchorPane>
+	</center>
+   <right>
+      <HBox prefHeight="619.0" prefWidth="156.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane hgap="2.0" prefHeight="599.0" prefWidth="144.0" vgap="2.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="68.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="64.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label style="-fx-font-size: 11;" text="Архангай:" />
+                  <Label style="-fx-font-size: 11;" text="Баянхонгор:" GridPane.rowIndex="1" />
+                  <Label style="-fx-font-size: 11;" text="Баян-Өлгий:" GridPane.rowIndex="2" />
+                  <Label style="-fx-font-size: 11;" text="Булган:" GridPane.rowIndex="3" />
+                  <Label style="-fx-font-size: 11;" text="Дархан-Уул:" GridPane.rowIndex="4" />
+                  <Label style="-fx-font-size: 11;" text="Дорнод:" GridPane.rowIndex="5" />
+                  <Label style="-fx-font-size: 11;" text="Дорноговь:" GridPane.rowIndex="7" />
+                  <Label style="-fx-font-size: 11;" text="Говь-Алтай:" GridPane.rowIndex="8" />
+                  <Label style="-fx-font-size: 11;" text="Говьсүмбэр:" GridPane.rowIndex="9" />
+                  <Label style="-fx-font-size: 11;" text="Ховд:" GridPane.rowIndex="10" />
+                  <Label style="-fx-font-size: 11;" text="Хэнтий:" GridPane.rowIndex="11" />
+                  <Label style="-fx-font-size: 11;" text="Хөвсгөл:" GridPane.rowIndex="12" />
+                  <Label style="-fx-font-size: 11;" text="Өмнөговь:" GridPane.rowIndex="13" />
+                  <Label style="-fx-font-size: 11;" text="Орхон:" GridPane.rowIndex="14" />
+                  <Label style="-fx-font-size: 11;" text="Өвөрхангай:" GridPane.rowIndex="15" />
+                  <Label style="-fx-font-size: 11;" text="Сэлэнгэ:" GridPane.rowIndex="16" />
+                  <Label style="-fx-font-size: 11;" text="Сүхбаатар:" GridPane.rowIndex="17" />
+                  <Label style="-fx-font-size: 11;" text="Төв:" GridPane.rowIndex="18" />
+                  <Label style="-fx-font-size: 11;" text="Улаанбаатар:" GridPane.rowIndex="19" />
+                  <Label style="-fx-font-size: 11;" text="Увс:" GridPane.rowIndex="20" />
+                  <Label style="-fx-font-size: 11;" text="Завхан:" GridPane.rowIndex="21" />
+                  <Label style="-fx-font-size: 11;" text="Дундговь:" GridPane.rowIndex="6" />
+                  <TextField fx:id="arkhangaiText" alignment="CENTER_RIGHT" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" />
+                  <TextField fx:id="bayanKnongorText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="9.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="BayanOlgiiText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="37.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="BulganText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="65.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="darkhanUulText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="93.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="dornodText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="121.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="dundGoviText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="149.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="dornoGoviText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="177.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="goviAltaiText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="205.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField fx:id="goviSumberText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="233.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextField fx:id="hovdText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="261.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <TextField fx:id="khentiiText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="289.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <TextField fx:id="khovsgolText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="317.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <TextField fx:id="zavhanText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="345.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+                  <TextField fx:id="uvsText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="600.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+                  <TextField fx:id="ulaanbaatarText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="571.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+                  <TextField fx:id="tovText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="542.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+                  <TextField fx:id="sukhBaatarText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="513.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                  <TextField fx:id="selengeText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="485.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                  <TextField fx:id="ovorKhangaiText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="457.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                  <TextField fx:id="orkhonText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="429.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                  <TextField fx:id="omnoGoviText" alignment="CENTER_RIGHT" layoutX="105.0" layoutY="401.0" onAction="#handleChanges" style="-fx-font-size: 10;" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </GridPane>
+         </children>
+      </HBox>
+   </right>
+   <left>
+      <VBox prefHeight="619.0" prefWidth="127.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listView" editable="true" onMouseClicked="#handleListChange" prefHeight="519.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ListView>
+            <Button mnemonicParsing="false" onAction="#handleNewYear" prefHeight="30.0" prefWidth="155.0" text="Он Нэмэх">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleDeleteYear" prefHeight="31.0" prefWidth="316.0" text="Он Устгах">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Дүрслэх">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleImageOutput" text="Зургаар" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Тохиргоо">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleColorChooser" text="Харагдах байдал" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Тусламж">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="Зохиогч" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
